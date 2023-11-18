@@ -1,0 +1,15 @@
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\bin\Release\net6.0\CreditRegistrationCommon.deps.json
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\bin\Release\net6.0\CreditRegistrationCommon.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\bin\Release\net6.0\CreditRegistrationCommon.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\bin\Release\net6.0\CreditRegistration.DbCommon.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\bin\Release\net6.0\CreditRegistration.DbCommon.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.csproj.AssemblyReference.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.AssemblyInfoInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.AssemblyInfo.cs
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.csproj.CoreCompileInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.csproj.CopyComplete
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\refint\CreditRegistrationCommon.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\CreditRegistrationCommon.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistrationCommon\obj\Release\net6.0\ref\CreditRegistrationCommon.dll

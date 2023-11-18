@@ -1,0 +1,26 @@
+18.11.2023 16:49:03:Information:Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+
+18.11.2023 16:50:17:Information:Application started. Press Ctrl+C to shut down.
+
+18.11.2023 16:50:17:Information:Hosting environment: Development
+
+18.11.2023 16:50:17:Information:Content root path: C:\PetProjects\CreditRegistrationService\CreditRegistrationService\
+
+18.11.2023 16:52:14:Information:Executed DbCommand (76ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+18.11.2023 16:52:14:Information:Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+18.11.2023 16:52:14:Information:Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Double), @p1='?', @p2='?', @p3='?' (DbType = Int64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "CreditRegistrationSchema".loan_order (credit_rating, order_id, status, tariff_id, time_insert, time_update, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+

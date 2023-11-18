@@ -1,0 +1,17 @@
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\bin\Debug\net6.0\CreditRegistration.Postgre.deps.json
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\bin\Debug\net6.0\CreditRegistration.Postgre.runtimeconfig.json
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\bin\Debug\net6.0\CreditRegistration.Postgre.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\bin\Debug\net6.0\CreditRegistration.Postgre.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\bin\Debug\net6.0\CreditRegistration.DbCommon.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\bin\Debug\net6.0\CreditRegistration.DbCommon.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.csproj.AssemblyReference.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.GeneratedMSBuildEditorConfig.editorconfig
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.AssemblyInfoInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.AssemblyInfo.cs
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.csproj.CoreCompileInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.csproj.CopyComplete
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\refint\CreditRegistration.Postgre.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\CreditRegistration.Postgre.genruntimeconfig.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.Postgre\obj\Debug\net6.0\ref\CreditRegistration.Postgre.dll

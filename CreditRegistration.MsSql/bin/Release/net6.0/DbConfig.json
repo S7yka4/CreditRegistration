@@ -1,0 +1,4 @@
+﻿{
+  "connectionString": "Data Source=S7YKA4WS; Initial Catalog=CreditRegistration; User id=TestUser; Password=12345678; TrustServerCertificate=true;",
+  "schemaName": "CreditRegistrationSchema"
+}

@@ -1,0 +1,15 @@
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\bin\Debug\net6.0\CreditRegistrationTests.Common.deps.json
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\bin\Debug\net6.0\CreditRegistrationTests.Common.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\bin\Debug\net6.0\CreditRegistrationTests.Common.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\bin\Debug\net6.0\CreditRegistration.DbCommon.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\bin\Debug\net6.0\CreditRegistration.DbCommon.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.csproj.AssemblyReference.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.AssemblyInfoInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.AssemblyInfo.cs
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.csproj.CoreCompileInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.csproj.CopyComplete
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\refint\CreditRegistrationTests.Common.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\CreditRegistrationTests.Common.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistrationTests.Common\obj\Debug\net6.0\ref\CreditRegistrationTests.Common.dll

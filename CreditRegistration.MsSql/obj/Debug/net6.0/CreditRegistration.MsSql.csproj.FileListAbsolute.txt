@@ -1,0 +1,17 @@
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\bin\Debug\net6.0\CreditRegistration.MsSql.deps.json
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\bin\Debug\net6.0\CreditRegistration.MsSql.runtimeconfig.json
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\bin\Debug\net6.0\CreditRegistration.MsSql.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\bin\Debug\net6.0\CreditRegistration.MsSql.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\bin\Debug\net6.0\CreditRegistration.DbCommon.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\bin\Debug\net6.0\CreditRegistration.DbCommon.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.csproj.AssemblyReference.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.GeneratedMSBuildEditorConfig.editorconfig
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.AssemblyInfoInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.AssemblyInfo.cs
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.csproj.CoreCompileInputs.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.csproj.CopyComplete
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\refint\CreditRegistration.MsSql.dll
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.pdb
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\CreditRegistration.MsSql.genruntimeconfig.cache
+C:\PetProjects\CreditRegistrationService\CreditRegistration.MsSql\obj\Debug\net6.0\ref\CreditRegistration.MsSql.dll
