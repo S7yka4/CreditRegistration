@@ -20,7 +20,7 @@
         {
             if (formatter != null)
                 lock (_locker)
-                    using (var sw = new StreamWriter(_fileName,true))
+                    using (var sw = new StreamWriter(_fileName, true))
                         sw.WriteLine($"{DateTime.Now}:{logLevel}:{formatter(state, exception)}{Environment.NewLine}");
         }
     }

@@ -10,3 +10,15 @@ C:\PetProjects\CreditRegistrationService\CreditRegistration.DbModels\obj\Debug\n
 C:\PetProjects\CreditRegistrationService\CreditRegistration.DbModels\obj\Debug\net6.0\refint\CreditRegistration.DbCommon.dll
 C:\PetProjects\CreditRegistrationService\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.pdb
 C:\PetProjects\CreditRegistrationService\CreditRegistration.DbModels\obj\Debug\net6.0\ref\CreditRegistration.DbCommon.dll
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\bin\Debug\net6.0\CreditRegistration.DbCommon.deps.json
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\bin\Debug\net6.0\CreditRegistration.DbCommon.dll
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\bin\Debug\net6.0\CreditRegistration.DbCommon.pdb
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.csproj.AssemblyReference.cache
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.AssemblyInfoInputs.cache
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.AssemblyInfo.cs
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.csproj.CoreCompileInputs.cache
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.dll
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\refint\CreditRegistration.DbCommon.dll
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\CreditRegistration.DbCommon.pdb
+C:\Users\ipetr\Documents\CreditRegistration\CreditRegistration.DbModels\obj\Debug\net6.0\ref\CreditRegistration.DbCommon.dll

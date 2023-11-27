@@ -1,9 +1,7 @@
 using CreditRegistration.DbCommon.Models;
-using CreditRegistrationCommon.Tests;
 using CreditRegistrationService;
 using CreditRegistrationService.Bodies;
 using CreditRegistrationTests.Common;
-using Microsoft.AspNetCore.Http;
 
 namespace CreditRegistration.ServiceTest
 {
@@ -16,7 +14,7 @@ namespace CreditRegistration.ServiceTest
         TestDataSetter _testDataSetter;
         DbPreparer _preparer;
         readonly string provider = "POSTGRE";
-        readonly string postgreConnectionString = "Server=127.0.0.1;Port=5432;Database=PetProjectDb;Username=testUser;Password=232962759Mat;";
+        readonly string postgreConnectionString = "Server=127.0.0.1;Port=5432;Database=PetProjectDb;Username=testUser;Password=12345678;";
 
 
         DbContextFactory ContextFactory
@@ -52,7 +50,7 @@ namespace CreditRegistration.ServiceTest
             }
         }
         [Fact]
-        public void  GetTarrifsTest()
+        public void GetTarrifsSuccess()
         {
             try
             {
@@ -72,7 +70,7 @@ namespace CreditRegistration.ServiceTest
         {
             try
             {
-                var dict=Preparer.PrepareDb(provider);
+                var dict = Preparer.PrepareDb(provider);
                 var response = Client.CreateOrder(123456, (long)dict[1]);
                 response.EnsureSuccessStatusCode();
                 var successResponse = response.Deserialize<CreateOrderSuccessResponse>();
@@ -107,8 +105,8 @@ namespace CreditRegistration.ServiceTest
         {
             try
             {
-                var dict=Preparer.PrepareDb(provider);
-                var response = Client.CreateOrder(111111111, (long) dict[1]);
+                var dict = Preparer.PrepareDb(provider);
+                var response = Client.CreateOrder(111111111, (long)dict[1]);
                 Assert.Equal("BadRequest", response.StatusCode.ToString());
                 var errorResponse = response.Deserialize<ErrorResponse>();
                 Assert.Equal(ErrorCodes.LoanConsideration, errorResponse.error.code);
@@ -124,7 +122,7 @@ namespace CreditRegistration.ServiceTest
         {
             try
             {
-                var dict=Preparer.PrepareDb(provider);
+                var dict = Preparer.PrepareDb(provider);
                 var response = Client.CreateOrder(333333333, (long)dict[2]);
                 Assert.Equal("BadRequest", response.StatusCode.ToString());
                 var errorResponse = response.Deserialize<ErrorResponse>();
@@ -141,7 +139,7 @@ namespace CreditRegistration.ServiceTest
         {
             try
             {
-                var dict=Preparer.PrepareDb(provider);
+                var dict = Preparer.PrepareDb(provider);
                 var response = Client.CreateOrder(22222222, (long)dict[1]);
                 var str = response.Content.ReadAsStringAsync().Result;
                 Assert.Equal("BadRequest", response.StatusCode.ToString());

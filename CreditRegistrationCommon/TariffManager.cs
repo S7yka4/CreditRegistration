@@ -1,11 +1,6 @@
 ﻿using CreditRegistration.DbCommon;
 using CreditRegistration.DbCommon.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CreditRegistrationCommon
 {
@@ -18,9 +13,9 @@ namespace CreditRegistrationCommon
             _context = context;
         }
 
-        public async Task<List<Tarrif>> GetTarrifs()
+        public async Task<Tarrif[]> GetTarrifs()
         {
-            var result = await _context.Tarrifs.ToListAsync();
+            var result = await _context.Tarrifs.ToArrayAsync();
             return result;
         }
 

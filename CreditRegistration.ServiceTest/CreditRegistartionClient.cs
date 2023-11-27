@@ -1,15 +1,7 @@
-﻿using Azure.Core;
-using CreditRegistration.DbCommon.Models;
-using CreditRegistrationService.Bodies;
-using Microsoft.Extensions.FileSystemGlobbing;
+﻿using CreditRegistrationService.Bodies;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Security.Authentication;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace CreditRegistration.ServiceTest
 {
@@ -52,7 +44,7 @@ namespace CreditRegistration.ServiceTest
                 userId = userId,
                 tarrifId = tarrifId
             };
-            var content = new StringContent(JsonConvert.SerializeObject(body),Encoding.UTF8, "application/json");
+            var content = new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8, "application/json");
             return _client.PostAsync(path, content).Result;
         }
 

@@ -1,11 +1,6 @@
 ﻿using CreditRegistration.DbCommon;
 using CreditRegistration.DbCommon.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CreditRegistrationCommon
 {
@@ -18,10 +13,10 @@ namespace CreditRegistrationCommon
             _context = context;
         }
 
-        public async Task<List<LoanOrder>> GetByUserId(long userId)
+        public async Task<LoanOrder[]> GetByUserId(long userId)
         {
 
-            return await _context.LoanOrders.Where(_ => _.UserId == userId).ToListAsync();
+            return await _context.LoanOrders.Where(_ => _.UserId == userId).ToArrayAsync();
         }
 
         public async Task<string> CreateLoanOrder(LoanOrder loanOrder)
@@ -49,9 +44,9 @@ namespace CreditRegistrationCommon
             await _context.SaveChangesAsync();
             return 0;
         }
-        public async Task<List<LoanOrder>> GetByStatus(string status)
+        public async Task<LoanOrder[]> GetByStatus(string status)
         {
-            return await _context.LoanOrders.Where(_ => _.Status == status).ToListAsync();
+            return await _context.LoanOrders.Where(_ => _.Status == status).ToArrayAsync();
         }
 
         public async Task<int> DeleteOrder(LoanOrder order)
@@ -59,6 +54,11 @@ namespace CreditRegistrationCommon
             _context.LoanOrders.Remove(order);
             await _context.SaveChangesAsync();
             return 0;
+        }
+
+        public async Task<LoanOrder?> GetFirstByStatus(string status)
+        {
+            return await _context.LoanOrders.FirstOrDefaultAsync(_ => _.Status == status);
         }
 
     }

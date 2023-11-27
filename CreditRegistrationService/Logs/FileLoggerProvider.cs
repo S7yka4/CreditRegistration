@@ -6,7 +6,7 @@
         string _filePath;
         bool _isDevelop;
 
-        public FileLoggerProvider(ConfigurationManager config,bool isDevelop)
+        public FileLoggerProvider(ConfigurationManager config, bool isDevelop)
         {
             _filePath = config.GetSection("Logging").GetValue<string>("FileName");
             _isDevelop = isDevelop;

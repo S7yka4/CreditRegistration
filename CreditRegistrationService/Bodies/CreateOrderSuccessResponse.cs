@@ -2,7 +2,7 @@
 {
     public class Data
     {
-        public string orderId { get; set; }
+        public string orderId { get; init; }
         public Data() { }
         public Data(string _orderId)
         {
@@ -11,12 +11,9 @@
     }
     public class CreateOrderSuccessResponse
     {
-        public Data data { get; set; }
+        public Data data { get; init; }
 
-        public CreateOrderSuccessResponse()
-        {
-        }
-        public CreateOrderSuccessResponse(string orderId) 
+        public CreateOrderSuccessResponse(string orderId)
         {
             data = new Data(orderId);
         }

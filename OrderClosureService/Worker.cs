@@ -7,7 +7,7 @@ namespace OrderClosureService
         private readonly ILogger<Worker> _logger;
         private readonly IOrderCloseService _orderCloseService;
 
-        public Worker(ILogger<Worker> logger,IOrderCloseService orderCloseService)
+        public Worker(ILogger<Worker> logger, IOrderCloseService orderCloseService)
         {
             _logger = logger;
             _orderCloseService = orderCloseService;
@@ -19,7 +19,7 @@ namespace OrderClosureService
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 _orderCloseService.CloseOrder();
-                await Task.Delay(60*2*1000, stoppingToken);
+                await Task.Delay(60 * 2 * 1000, stoppingToken);
             }
         }
     }

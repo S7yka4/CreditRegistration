@@ -1,11 +1,9 @@
 
 using CreditRegistration.DbCommon;
-using CreditRegistration.DbCommon.Models;
-using Microsoft.EntityFrameworkCore;
-using CreditRegistrationService;
-using CreditRegistration.Postgre;
 using CreditRegistrationCommon;
+using CreditRegistrationService;
 using CreditRegistrationService.Logs;
+using Microsoft.EntityFrameworkCore;
 
 internal class Program
 {

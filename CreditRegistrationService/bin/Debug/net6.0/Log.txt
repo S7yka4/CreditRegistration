@@ -1,0 +1,463 @@
+27.11.2023 17:05:48:Information:Now listening on: http://localhost:5000
+
+27.11.2023 17:05:48:Information:Now listening on: https://localhost:5001
+
+27.11.2023 17:05:48:Information:Application started. Press Ctrl+C to shut down.
+
+27.11.2023 17:05:48:Information:Hosting environment: Production
+
+27.11.2023 17:05:48:Information:Content root path: C:\Users\ipetr\Documents\CreditRegistration\CreditRegistrationService\bin\Debug\net6.0\
+
+27.11.2023 17:06:37:Information:Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+
+27.11.2023 17:06:38:Information:Executed DbCommand (13ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "CreditRegistrationSchema".loan_order
+WHERE id = @p0;
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:06:38:Information:Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Double), @p1='?', @p2='?', @p3='?' (DbType = Int64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "CreditRegistrationSchema".loan_order (credit_rating, order_id, status, tariff_id, time_insert, time_update, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:06:38:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:07:24:Information:Executed DbCommand (3ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:08:39:Information:Executed DbCommand (2ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:10:36:Information:Now listening on: http://localhost:5000
+
+27.11.2023 17:10:36:Information:Now listening on: https://localhost:5001
+
+27.11.2023 17:10:36:Information:Application started. Press Ctrl+C to shut down.
+
+27.11.2023 17:10:36:Information:Hosting environment: Production
+
+27.11.2023 17:10:36:Information:Content root path: C:\Users\ipetr\Documents\CreditRegistration\CreditRegistrationService\bin\Debug\net6.0\
+
+27.11.2023 17:11:00:Information:Executed DbCommand (61ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:13:13:Information:Now listening on: http://localhost:5000
+
+27.11.2023 17:13:13:Information:Now listening on: https://localhost:5001
+
+27.11.2023 17:13:13:Information:Application started. Press Ctrl+C to shut down.
+
+27.11.2023 17:13:13:Information:Hosting environment: Production
+
+27.11.2023 17:13:13:Information:Content root path: C:\Users\ipetr\Documents\CreditRegistration\CreditRegistrationService\bin\Debug\net6.0\
+
+27.11.2023 17:13:27:Information:Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+
+27.11.2023 17:13:27:Information:Executed DbCommand (16ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:13:27:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:13:27:Information:Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "CreditRegistrationSchema".loan_order
+WHERE id = @p0;
+
+27.11.2023 17:13:27:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:13:27:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:13:28:Information:Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Double), @p1='?', @p2='?', @p3='?' (DbType = Int64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "CreditRegistrationSchema".loan_order (credit_rating, order_id, status, tariff_id, time_insert, time_update, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:13:28:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:28:18:Information:Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+
+27.11.2023 17:28:18:Information:Executed DbCommand (4ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:28:18:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:28:18:Information:Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "CreditRegistrationSchema".loan_order
+WHERE id = @p0;
+
+27.11.2023 17:28:18:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:28:18:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:28:18:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:28:19:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:28:19:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:28:19:Information:Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Double), @p1='?', @p2='?', @p3='?' (DbType = Int64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "CreditRegistrationSchema".loan_order (credit_rating, order_id, status, tariff_id, time_insert, time_update, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+
+27.11.2023 17:28:19:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:28:19:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:28:19:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:28:19:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:28:19:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:29:03:Information:Executed DbCommand (3ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:29:03:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:29:03:Information:Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "CreditRegistrationSchema".loan_order
+WHERE id = @p0;
+
+27.11.2023 17:29:03:Information:Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:29:03:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:29:03:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:29:03:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:29:04:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:29:04:Information:Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Double), @p1='?', @p2='?', @p3='?' (DbType = Int64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "CreditRegistrationSchema".loan_order (credit_rating, order_id, status, tariff_id, time_insert, time_update, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+
+27.11.2023 17:29:04:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:29:04:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:29:04:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:29:04:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:29:04:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:29:04:Information:Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+
+27.11.2023 17:34:46:Information:Now listening on: http://localhost:5000
+
+27.11.2023 17:34:46:Information:Now listening on: https://localhost:5001
+
+27.11.2023 17:34:46:Information:Application started. Press Ctrl+C to shut down.
+
+27.11.2023 17:34:46:Information:Hosting environment: Production
+
+27.11.2023 17:34:46:Information:Content root path: C:\Users\ipetr\Documents\CreditRegistration\CreditRegistrationService\bin\Debug\net6.0\
+
+27.11.2023 17:35:03:Information:Executed DbCommand (63ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:35:03:Information:Executed DbCommand (3ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:35:03:Information:Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+DELETE FROM "CreditRegistrationSchema".loan_order
+WHERE id = @p0;
+
+27.11.2023 17:35:03:Information:Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:35:03:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:35:03:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:35:03:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:35:03:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:35:03:Information:Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Double), @p1='?', @p2='?', @p3='?' (DbType = Int64), @p4='?' (DbType = DateTime), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "CreditRegistrationSchema".loan_order (credit_rating, order_id, status, tariff_id, time_insert, time_update, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+
+27.11.2023 17:35:03:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:35:03:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:35:03:Information:Executed DbCommand (1ms) [Parameters=[@__orderId_0='?', @__userId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0 AND l.user_id = @__userId_1
+LIMIT 1
+
+27.11.2023 17:35:04:Information:Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+
+27.11.2023 17:35:04:Information:Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.user_id = @__userId_0
+
+27.11.2023 17:35:04:Information:Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+

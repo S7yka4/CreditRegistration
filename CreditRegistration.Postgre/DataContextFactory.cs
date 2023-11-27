@@ -1,19 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore.Design;
+﻿using CreditRegistration.DbCommon;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CreditRegistration.DbCommon.Models;
-using CreditRegistration.DbCommon;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace CreditRegistration.Postgre
 {
     public class DataContextFactory : IDesignTimeDbContextFactory<PostgreContext>
     {
         // dotnet ef migrations add Initial --  --Args 'connextionString'
-        // dotnet ef database update -- "connextionString"
+        // dotnet ef database update -- "connectionString"
         public PostgreContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();

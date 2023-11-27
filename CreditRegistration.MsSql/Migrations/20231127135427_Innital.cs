@@ -1,13 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CreditRegistration.Postgre.Migrations
+namespace CreditRegistration.MsSql.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class Innital : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,14 +19,14 @@ namespace CreditRegistration.Postgre.Migrations
                 columns: table => new
                 {
                     id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    order_id = table.Column<string>(type: "text", nullable: false),
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    order_id = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
                     user_id = table.Column<long>(type: "bigint", nullable: false),
                     tariff_id = table.Column<long>(type: "bigint", nullable: false),
-                    credit_rating = table.Column<double>(type: "double precision", nullable: false),
-                    status = table.Column<string>(type: "text", nullable: false),
-                    time_insert = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    time_update = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    credit_rating = table.Column<double>(type: "float", nullable: false),
+                    status = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    time_insert = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    time_update = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -41,9 +39,9 @@ namespace CreditRegistration.Postgre.Migrations
                 columns: table => new
                 {
                     id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    type = table.Column<string>(type: "text", nullable: false),
-                    interest_rate = table.Column<string>(type: "text", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    type = table.Column<string>(type: "nvarchar(40)", maxLength: 40, nullable: false),
+                    interest_rate = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false)
                 },
                 constraints: table =>
                 {

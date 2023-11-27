@@ -1,9 +1,7 @@
-﻿using CreditRegistration.DbCommon.Models;
-
-namespace CreditRegistrationCommon
+﻿namespace CreditRegistrationCommon
 {
     public interface IOrderCloseService
     {
-        public void CloseOrder();
+        void CloseOrder();
     }
 }

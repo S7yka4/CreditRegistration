@@ -11,7 +11,7 @@ namespace CreditRegistrationCommon
         }
         public async void CloseOrder()
         {
-            var loanOrder = (await _loanOrderService.GetByStatus(LoanOrderStatus.InProgress)).FirstOrDefault();
+            var loanOrder = await _loanOrderService.GetFirstByStatus(LoanOrderStatus.InProgress);
             if (loanOrder is not null)
             {
                 loanOrder.Status = new Random().Next(0, 1) == 1 ? LoanOrderStatus.Approved : LoanOrderStatus.Refused;

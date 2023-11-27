@@ -1,13 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Design;
+﻿using CreditRegistration.DbCommon;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CreditRegistration.DbCommon.Models;
-using Microsoft.Extensions.Options;
-using CreditRegistration.DbCommon;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace CreditRegistration.MsSql
 {
@@ -22,5 +15,5 @@ namespace CreditRegistration.MsSql
             return new MsSqlContext(optionsBuilder.Options);
         }
     }
-    
+
 }

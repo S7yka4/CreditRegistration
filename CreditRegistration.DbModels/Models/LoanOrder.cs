@@ -1,21 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CreditRegistration.DbCommon.Models
 {
-    [Table("loan_order",Schema = DefaultDbConfiguration.DefaultSchemaName),Index(nameof(OrderId),nameof(UserId))]
+    [Table("loan_order", Schema = DefaultDbConfiguration.DefaultSchemaName), Index(nameof(OrderId), nameof(UserId))]
     public class LoanOrder
     {
         [Key, Column("id"), NotNull]
         public long? Id { get; set; }
-        [Column("order_id"), NotNull]
+        [Column("order_id"), NotNull, MaxLength(40)]
         public string OrderId { get; set; }
         [Column("user_id"), NotNull]
         public long UserId { get; set; }
@@ -23,9 +18,9 @@ namespace CreditRegistration.DbCommon.Models
         public long TarrifId { get; set; }
         [Column("credit_rating"), NotNull]
         public double CreditRating { get; set; }
-        [Column("status"), NotNull]
+        [Column("status"), NotNull, MaxLength(20)]
         public string Status { get; set; }
-        
+
         DateTime timeInsert;
         DateTime timeUpdate;
         [Column("time_insert"), NotNull]
@@ -42,7 +37,7 @@ namespace CreditRegistration.DbCommon.Models
 
         }
         [Column("time_update"), NotNull]
-        public DateTime TimeUpdate 
+        public DateTime TimeUpdate
         {
             get
             {
@@ -57,7 +52,7 @@ namespace CreditRegistration.DbCommon.Models
         public LoanOrder() { }
     }
 
-    public static  class LoanOrderStatus
+    public static class LoanOrderStatus
     {
         public static string InProgress = "IN_PROGRESS";
         public static string Refused = "REFUSED";

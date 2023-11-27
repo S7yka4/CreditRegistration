@@ -24,3 +24,52 @@ INSERT INTO "CreditRegistrationSchema".loan_order (credit_rating, order_id, stat
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
 RETURNING id;
 
+27.11.2023 16:41:14:Information:Application started. Press Ctrl+C to shut down.
+
+27.11.2023 16:41:14:Information:Hosting environment: Development
+
+27.11.2023 16:41:14:Information:Content root path: C:\Users\ipetr\Documents\CreditRegistration\CreditRegistrationService\
+
+27.11.2023 16:41:29:Error:An error occurred using the connection to database 'PetProjectDb' on server ''.
+
+27.11.2023 16:41:29:Error:An exception occurred while iterating over the results of a query for context type 'CreditRegistration.DbCommon.DataContext'.
+Npgsql.NpgsqlException (0x80004005): No password has been provided but the backend requires one (in MD5)
+   at Npgsql.Internal.NpgsqlConnector.AuthenticateMD5(String username, Byte[] salt, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Authenticate(String username, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|215_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|28_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+
+27.11.2023 16:41:29:Error:An unhandled exception has occurred while executing the request.
+
+27.11.2023 16:55:12:Information:Application started. Press Ctrl+C to shut down.
+
+27.11.2023 16:55:12:Information:Hosting environment: Development
+
+27.11.2023 16:55:12:Information:Content root path: C:\Users\ipetr\Documents\CreditRegistration\CreditRegistrationService\
+
+27.11.2023 16:55:23:Information:Executed DbCommand (109ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+
+27.11.2023 16:55:44:Information:Executed DbCommand (36ms) [Parameters=[@__orderId_0='?'], CommandType='Text', CommandTimeout='30']
+SELECT l.id, l.credit_rating, l.order_id, l.status, l.tariff_id, l.time_insert, l.time_update, l.user_id
+FROM "CreditRegistrationSchema".loan_order AS l
+WHERE l.order_id = @__orderId_0
+LIMIT 1
+
+27.11.2023 16:56:11:Information:Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT t.id, t.interest_rate, t.type
+FROM "CreditRegistrationSchema".tariff AS t
+WHERE t.id = @__p_0
+LIMIT 1
+

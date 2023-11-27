@@ -1,10 +1,7 @@
 ﻿using CreditRegistration.DbCommon.Models;
 using CreditRegistrationCommon;
 using CreditRegistrationService.Bodies;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Runtime.CompilerServices;
 
 namespace CreditRegistrationService.Controllers
 {
@@ -80,15 +77,6 @@ namespace CreditRegistrationService.Controllers
             }
             return StatusCode(StatusCodes.Status400BadRequest, new ErrorResponse(ErrorCodes.OrderImpossibleToDelete));
         }
-
-        [HttpGet]
-        [Route("getException")]
-        public async Task<IActionResult> GetException()
-        {
-            _logger.LogDebug("Вызван GetTarrif");
-            throw new Exception("TestException");
-        }
-
 
     }
 }

@@ -1,6 +1,4 @@
-﻿using CreditRegistration.DbCommon;
-using Microsoft.EntityFrameworkCore;
-using System.Runtime.CompilerServices;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace CreditRegistrationService
 {
